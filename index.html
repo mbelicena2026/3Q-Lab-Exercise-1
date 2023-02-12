@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>whdsjdahjd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        .btn-primary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #0d6efd;
+            --bs-btn-border-color: #0d6dfd00;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #0b5ed7;
+            --bs-btn-hover-border-color: #0a57ca00;
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #0a58ca;
+            --bs-btn-active-border-color: #0a52be00;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #0d6efd;
+            --bs-btn-disabled-border-color: #0d6efd;
+        }
+
+        .pb-5 {
+            padding-bottom: 1.4rem !important;
+        }
+
+        .pb-3 {
+            padding-bottom: 0.8rem !important;
+        }
+
+
+        body {
+            background: url('background.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+        h4 {
+            color: darkgrey;
+            font-size: 10px;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        //Variables
+        var score = 0;
+        var passingstatements = [
+            "You passed - Nice Work!",
+            "Amazing score! Keep it up"];
+
+        var nonpassingstatements = [
+            "You're almost there, try once more",
+            "Thats a bit low - Don't give up",];
+
+        //Score
+        if (score < 7) {
+            //non-passing
+        } else {
+            //passing
+        }
+
+
+        //Test 1
+        //Question 1
+        function Option1T1Q1() {
+            document.getElementById("WrongAnswerT1Q1").style.backgroundColor = '#df0000';
+        }
+        function Option2T1Q1() {
+            document.getElementById("RightAnswerT1Q1").style.backgroundColor = '#00df30';
+        }
+        function Option3T1Q1() {
+            document.getElementById("WrongAnswer2T1Q1").style.backgroundColor = '#df0000';
+        }
+        function HintT1Q1() {
+            alert('Recall the basic principles of isotopes.');
+        }
+        //Question 2
+        function Option1T1Q2() {
+            document.getElementById("WrongAnswerT1Q2").style.backgroundColor = '#df0000';
+        }
+        function Option2T1Q2() {
+            document.getElementById("WrongAnswer2T1Q2").style.backgroundColor = '#df0000';
+        }
+        function Option3T1Q2() {
+            document.getElementById("RightAnswerT1Q2").style.backgroundColor = '#00df30';
+        }
+        function HintT1Q2() {
+            alert('Recall the properties of enzymes.');
+        }
+        //Question 3
+        function Option1T1Q3() {
+            document.getElementById("RightAnswerT1Q3").style.backgroundColor = '#00df30';
+        }
+        function Option2T1Q3() {
+            document.getElementById("WrongAnswerT1Q3").style.backgroundColor = '#df0000';
+        }
+        function Option3T1Q3() {
+            document.getElementById("WrongAnswer2T1Q3").style.backgroundColor = '#df0000';
+        }
+        function HintT1Q3() {
+            alert('Recall the place where most of the electrons are excited.');
+        }
+        //-----------------------------------------------------------------------------//
+
+        //Question 1
+        function Option1T2Q1() {
+            document.getElementById("RightAnswerT2Q1").style.backgroundColor = '#00df30';
+        }
+        function Option2T2Q1() {
+            document.getElementById("WrongAnswerT2Q1").style.backgroundColor = '#df0000';
+        }
+        function HintT2Q1() {
+            alert('You dont need one for this question :)');
+        }
+        //Question 2
+        function Option1T2Q2() {
+            document.getElementById("WrongAnswerT2Q2").style.backgroundColor = '#df0000';
+        }
+        function Option2T2Q2() {
+            document.getElementById("RightAnswerT2Q2").style.backgroundColor = '#00df30';
+        }
+        function HintT2Q2() {
+            alert('Refer to your answer in question 1.');
+        }
+        //Question 3
+        function Option1T2Q3() {
+            document.getElementById("RightAnswerT2Q3").style.backgroundColor = '#00df30';
+        }
+        function Option2T2Q3() {
+            document.getElementById("WrongAnswerT2Q3").style.backgroundColor = '#df0000';
+        }
+        function HintT2Q3() {
+            alert('No hint for this one :)');
+        }
+    </script>
+
+
+</head>
+
+
+<body>
+    <H1 class="display-1 pt-3" style="text-align: center;">STEM QUIZ</H1>
+    <p style="text-align: center;">This quiz consists of 6 questions regarding the following topics:</p>
+    <ul style="text-align: center;">
+        <li>Biology
+        <li> Chemistry
+        <li> Math
+    </ul>
+    <p style="text-align: center;">Getting a question right will grant you 2 points but getting it wrong will deduct 2
+        points from your score. The highest score you can get in this quiz is 12 while the passing score is 7.</p>
+    <h3 style="text-align: center;">Score: <span id="results1"></span> out of 12</h3>
+    <div class="container pt-4">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Test 1 - Multiple Choice</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Test 2 - True or False</button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+                            <div class="col">
+                                <!--Question 1-->
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Question 1</h5>
+                                        <P> Which of the following is NOT true about isotopes?
+                                        </P>
+                                        <ul class="pb-4">
+                                            <li>A. ) Isotopes of the same element have the same number of electrons.
+                                            <li>B. ) Isotopes of the same element have different atomic numbers.
+                                            <li>C. ) Isotopes of the same element have different atomic masses.
+                                        </ul>
+                                        <div class="btn-group" data-toggle="buttons-radio">
+                                            <button type="button" class="btn btn-primary" id="WrongAnswerT1Q1"
+                                                onclick="Option1T1Q1()">A</button>
+                                            <button type="button" class="btn btn-primary" id="RightAnswerT1Q1"
+                                                onclick="Option2T1Q1()">B</button>
+                                            <button type="button" class="btn btn-primary" id="WrongAnswer2T1Q1"
+                                                onclick="Option3T1Q1()">C</button>
+                                        </div>
+                                        <!-- Test 1 hint Q1 -->
+                                        <button type="button" class="btn btn-primary" onclick="HintT1Q1()">Hint</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Question 2-->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Question 2</h5>
+                                        <P> What happens to an enzyme after the reaction it catalyzes has taken place?
+                                        </P>
+                                        <ul>
+                                            <li>A. ) The enzyme is destroyed and the cell makes another.
+                                            <li>B. ) The enzyme holds on to the product until another enzyme removes it.
+                                            <li>C. ) The enzyme is unchanged and ready to accept substrate molecules.
+                                        </ul>
+                                        <div class="btn-group" data-toggle="buttons-radio">
+                                            <button type="button" class="btn btn-primary" id="WrongAnswerT1Q2"
+                                                onclick="Option1T1Q2()">A</button>
+                                            <button type="button" class="btn btn-primary" id="WrongAnswer2T1Q2"
+                                                onclick="Option2T1Q2()">B</button>
+                                            <button type="button" class="btn btn-primary" id="RightAnswerT1Q2"
+                                                onclick="Option3T1Q2()">C</button>
+                                        </div>
+                                        <!-- Test 1 hint Q2 -->
+                                        <button type="button" class="btn btn-primary" onclick="HintT1Q2()">Hint</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Question 3-->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Question 3</h5>
+                                        <P> Energy to make ATP in the chloroplast comes most directly from...
+                                        </P>
+                                        <ul class="pb-5">
+                                            <li>A. ) Hydrogen ions flowing through an enzyme in the thylakoid membrane.
+                                            <li>B. ) Transfer of a phosphate from ADP.
+                                            <li>C. ) Electrons moving through the electron transport chain.
+                                        </ul>
+                                        <div class="btn-group" data-toggle="buttons-radio">
+                                            <button type="button" class="btn btn-primary" id="RightAnswerT1Q3"
+                                                onclick="Option1T1Q3()">A</button>
+                                            <button type="button" class="btn btn-primary" id="WrongAnswerT1Q3"
+                                                onclick="Option2T1Q3()">B</button>
+                                            <button type="button" class="btn btn-primary" id="WrongAnswer2T1Q3"
+                                                onclick="Option3T1Q3()">C</button>
+                                        </div>
+                                        <!-- Test 1 hint Q3 -->
+                                        <button type="button" class="btn btn-primary" onclick="HintT1Q3()">Hint</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="tab-pane fade show active" id="home-tab-pane2" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question 1</h5>
+                                            <P> Exponential decay occurs when something is DECREASING at a consistent
+                                                rate over time.
+                                            </P>
+                                            <img class="card-img-top" src="expodecay.png" width="200" height="360" alt="Exponential Decay Graph">
+                                            <h4 class="pb-3">Source:
+                                                https://www.ck12.org/book/ck-12-algebra-basic/section/8.6/
+                                            </h4>
+                                            <div class="btn-group" data-toggle="buttons-radio">
+                                                <button type="button" class="btn btn-primary" id="RightAnswerT2Q1"
+                                                    onclick="Option1T2Q1()">True</button>
+                                                <button type="button" class="btn btn-primary" id="WrongAnswerT2Q1"
+                                                    onclick="Option2T2Q1()">False</button>
+                                            </div>
+                                            <!-- Test 2 hint Q1 -->
+                                            <button type="button" class="btn btn-primary"
+                                                onclick="HintT2Q1()">Hint</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question 2</h5>
+                                            <P> Exponential growth occurs when something is DECREASING at a consistent
+                                                rate over time.
+                                            </P>
+                                            <img class="card-img-top" src="expogrowth.png" width="300" height="360" alt="Exponential Growth Graph">
+                                            <h4>Source:
+                                                https://flexbooks.ck12.org/cbook/ck-12-algebra-ii-with-trigonometry-concepts/section/8.1/related/lesson/exponential-growth-bsc-alg/
+                                            </h4>
+                                            <div class="btn-group" data-toggle="buttons-radio">
+                                                <button type="button" class="btn btn-primary" id="WrongAnswerT2Q2"
+                                                    onclick="Option1T2Q2()">True</button>
+                                                <button type="button" class="btn btn-primary" id="RightAnswerT2Q2"
+                                                    onclick="Option2T2Q2()">False</button>
+                                            </div>
+                                            <!-- Test 2 hint Q2 -->
+                                            <button type="button" class="btn btn-primary"
+                                                onclick="HintT2Q2()">Hint</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question 3</h5>
+                                            <P> Refer to both statements in this question.
+                                            </P>
+                                            <ul>
+                                                <li>I. Orderly crystal shapes, high melting points, and electrical
+                                                    conductivity when dissolved in water are properties of ionic
+                                                    compounds.
+
+                                                <li> II. You can predict how many electrons an element will gain or lose
+                                                    by
+                                                    looking at its valence electrons.
+                                            </ul>
+                                            <p class="pb-6">
+                                                Both statements are...
+                                            </p>
+                                            <div class="btn-group" data-toggle="buttons-radio">
+                                                <button type="button" class="btn btn-primary" id="RightAnswerT2Q3"
+                                                    onclick="Option1T2Q3()">True</button>
+                                                <button type="button" class="btn btn-primary" id="WrongAnswerT2Q3"
+                                                    onclick="Option2T2Q3()">False</button>
+                                            </div>
+                                            <!-- Test 2 hint Q2 -->
+                                            <button type="button" class="btn btn-primary"
+                                                onclick="HintT2Q3()">Hint</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
