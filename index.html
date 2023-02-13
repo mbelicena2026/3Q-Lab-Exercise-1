@@ -27,7 +27,7 @@
             --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
             --bs-btn-disabled-color: #fff;
             --bs-btn-disabled-bg: #0d6efd;
-            --bs-btn-disabled-border-color: #0d6efd;
+            --bs-btn-disabled-border-color: #ffffff00;
         }
 
         .pb-5 {
@@ -59,58 +59,70 @@
     <script>
         //Variables
         var score = 0;
-        var passingstatements = [
-            "You passed - Nice Work!",
-            "Amazing score! Keep it up"];
-
-        var nonpassingstatements = [
-            "You're almost there, try once more",
-            "Thats a bit low - Don't give up",];
-
-        //Score
-        if (score < 7) {
-            //non-passing
-        } else {
-            //passing
-        }
-
 
         //Test 1
         //Question 1
         function Option1T1Q1() {
-            document.getElementById("WrongAnswerT1Q1").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswerT1Q1').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswerT1Q1').style.backgroundColor = '#df0000';
         }
         function Option2T1Q1() {
-            document.getElementById("RightAnswerT1Q1").style.backgroundColor = '#00df30';
+            score = score + 2;
+            document.getElementById('RightAnswerT1Q1').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('RightAnswerT1Q1').style.backgroundColor = '#00df30';
         }
         function Option3T1Q1() {
-            document.getElementById("WrongAnswer2T1Q1").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswer2T1Q1').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswer2T1Q1').style.backgroundColor = '#df0000';
         }
         function HintT1Q1() {
             alert('Recall the basic principles of isotopes.');
         }
         //Question 2
         function Option1T1Q2() {
+            score = score - 2;
+            document.getElementById('WrongAnswerT1Q2').disabled = true;
+            document.getElementById("score").innerHTML = score;
             document.getElementById("WrongAnswerT1Q2").style.backgroundColor = '#df0000';
         }
         function Option2T1Q2() {
-            document.getElementById("WrongAnswer2T1Q2").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswer2T1Q2').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswer2T1Q2').style.backgroundColor = '#df0000';
         }
         function Option3T1Q2() {
-            document.getElementById("RightAnswerT1Q2").style.backgroundColor = '#00df30';
+            score = score + 2;
+            document.getElementById('RightAnswerT1Q2').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('RightAnswerT1Q2').style.backgroundColor = '#00df30';
         }
         function HintT1Q2() {
             alert('Recall the properties of enzymes.');
         }
         //Question 3
         function Option1T1Q3() {
+            score = score + 2;
+            document.getElementById('RightAnswerT1Q3').disabled = true;
+            document.getElementById("score").innerHTML = score;
             document.getElementById("RightAnswerT1Q3").style.backgroundColor = '#00df30';
         }
         function Option2T1Q3() {
-            document.getElementById("WrongAnswerT1Q3").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswerT1Q3').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswerT1Q3').style.backgroundColor = '#df0000';
         }
         function Option3T1Q3() {
-            document.getElementById("WrongAnswer2T1Q3").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswer2T1Q3').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswer2T1Q3').style.backgroundColor = '#df0000';
         }
         function HintT1Q3() {
             alert('Recall the place where most of the electrons are excited.');
@@ -119,30 +131,48 @@
 
         //Question 1
         function Option1T2Q1() {
-            document.getElementById("RightAnswerT2Q1").style.backgroundColor = '#00df30';
+            score = score + 2;
+            document.getElementById('RightAnswerT2Q1').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('RightAnswerT2Q1').style.backgroundColor = '#00df30';
         }
         function Option2T2Q1() {
-            document.getElementById("WrongAnswerT2Q1").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswerT2Q1').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswerT2Q1').style.backgroundColor = '#df0000';
         }
         function HintT2Q1() {
             alert('You dont need one for this question :)');
         }
         //Question 2
         function Option1T2Q2() {
-            document.getElementById("WrongAnswerT2Q2").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswerT2Q2').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswerT2Q2').style.backgroundColor = '#df0000';
         }
         function Option2T2Q2() {
-            document.getElementById("RightAnswerT2Q2").style.backgroundColor = '#00df30';
+            score = score + 2;
+            document.getElementById('RightAnswerT2Q2').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('RightAnswerT2Q2').style.backgroundColor = '#00df30';
         }
         function HintT2Q2() {
             alert('Refer to your answer in question 1.');
         }
         //Question 3
         function Option1T2Q3() {
-            document.getElementById("RightAnswerT2Q3").style.backgroundColor = '#00df30';
+            score = score + 2;
+            document.getElementById('RightAnswerT2Q3').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('RightAnswerT2Q3').style.backgroundColor = '#00df30';
         }
         function Option2T2Q3() {
-            document.getElementById("WrongAnswerT2Q3").style.backgroundColor = '#df0000';
+            score = score - 2;
+            document.getElementById('WrongAnswerT2Q3').disabled = true;
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('WrongAnswerT2Q3').style.backgroundColor = '#df0000';
         }
         function HintT2Q3() {
             alert('No hint for this one :)');
@@ -163,7 +193,7 @@
     </ul>
     <p style="text-align: center;">Getting a question right will grant you 2 points but getting it wrong will deduct 2
         points from your score. The highest score you can get in this quiz is 12 while the passing score is 7.</p>
-    <h3 style="text-align: center;">Score: <span id="results1"></span> out of 12</h3>
+    <h3 style="text-align: center;">Score: <span id="score">0</span> out of 12</h3>
     <div class="container pt-4">
         <div class="card" style="width: 100%;">
             <div class="card-body">
@@ -277,7 +307,8 @@
                                             <P> Exponential decay occurs when something is DECREASING at a consistent
                                                 rate over time.
                                             </P>
-                                            <img class="card-img-top" src="expodecay.png" width="200" height="360" alt="Exponential Decay Graph">
+                                            <img class="card-img-top" src="expodecay.png" width="200" height="360"
+                                                alt="Exponential Decay Graph">
                                             <h4 class="pb-3">Source:
                                                 https://www.ck12.org/book/ck-12-algebra-basic/section/8.6/
                                             </h4>
@@ -300,7 +331,8 @@
                                             <P> Exponential growth occurs when something is DECREASING at a consistent
                                                 rate over time.
                                             </P>
-                                            <img class="card-img-top" src="expogrowth.png" width="300" height="360" alt="Exponential Growth Graph">
+                                            <img class="card-img-top" src="expogrowth.png" width="300" height="360"
+                                                alt="Exponential Growth Graph">
                                             <h4>Source:
                                                 https://flexbooks.ck12.org/cbook/ck-12-algebra-ii-with-trigonometry-concepts/section/8.1/related/lesson/exponential-growth-bsc-alg/
                                             </h4>
